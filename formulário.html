@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de cadastro Kenzie</title>
 </head>
 <body>
-    <p>oi
-        
-    </p>
+      <form>
+           <label for="nome">Nome</label><div></div>
+              <input type="text" 
+                 name="nome" 
+                 id="nome" 
+                 placeholder="Digite seu nome aqui..." 
+                 required
+                 ><p></p>
+           <label for="email">E-mail</label><div></div>
+              <input type="text" 
+                 name="e-mail" 
+                 id="email" 
+                 placeholder="Digite seu e-mail aqui..." 
+                 required
+                 ><p></p>
+                 
+           <label for="descricao">Descrição</label><div></div>
+              <textarea id="descricao" 
+                 name="mensagem" 
+                 placeholder="Conte-nos o que o motivou a participar do evento..." 
+                 required 
+                 cols="30" 
+                 rows="10"
+              ></textarea>
+                 <p></p>                 
+           <label for="modulo">Módulo</label><div></div>
+              <select name="Módulo" id="modulo" required>
+                   <option value="">Escolher Módulo</option>
+                   <option value="1">Módulo 1</option>
+                   <option value="2">Módulo 2</option>
+                   <option value="3">Módulo 3</option>
+                   <option value="4">Módulo 4</option>
+                   <option value="5">Módulo 5</option>
+                   <option value="6">Módulo 6</option>
+               </select>
+                 <p></p>
+           <label for="senha">Senha</label><div></div>
+              <input type="password" 
+                    name="Senha" 
+                    id="senha" 
+                    placeholder="Digite sua senha aqui..." 
+                    required
+                    ><p></p>
+           <label for="senha2">Confirmar Senha</label><div></div>
+              <input type="password" 
+                     name="Senha" 
+                     id="senha2" 
+                     placeholder="Digite sua senha novamente aqui..." 
+                     required
+                     ><p></p>
+           <p>Deseja receber novidades em seu e-mail?</p>
+           <label for="sim">Sim</label>        
+              <input type="radio" value="sim" name="receber email" id="sim" required>
+           <label for="nao">Não</label>        
+              <input type="radio" value="não" name="receber email" id="nao" required>
+              <p></p>
+              <button type="submit">Cadastrar</button>              
+   
+
+      </form>
+
 </body>
 </html>
